@@ -30,7 +30,7 @@ df_praktijken_links=pd.DataFrame(praktijken_links)
 df_praktijken_links=df_praktijken_links.drop_duplicates()
 praktijken_zorgkaart_websites=df_praktijken_links.iloc[:,0].tolist()
 
-#Get address information for each practice and save in list of lists with four elements in each sublist: city, practice name, postal code, and address: praktijk_info
+# Get address information for each practice and save in list of lists with four elements in each sublist: city, practice name, postal code, and address: praktijk_info
 praktijk_info=[]
 for url in praktijken_zorgkaart_websites:
     url="https://www.zorgkaartnederland.nl"+url
